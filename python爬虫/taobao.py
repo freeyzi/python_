@@ -30,7 +30,7 @@ def printGoodsList(ilt):
         print(tplt.format(count, g[0], g[1]))
          
 def main():
-    goods = input("")
+    goods = "苹果笔记本"
     depth = 3
     start_url = 'https://s.taobao.com/search?q=' + goods
     infoList = []
