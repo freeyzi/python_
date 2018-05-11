@@ -7,12 +7,13 @@ def xinlang():
 		for html in htmls.items():
 			href = html.attr('href')
 			text = html.text()
-			heers = href + '\n' + text
-			print(heers)
+			heers = text + '\n' + href
+			print("抓爬中:===>>>>>>",heers)
 
 			with open("新浪.txt",'a',encoding="utf-8") as f:
 				f.write(heers)
 				f.close()
+				print("爬取成功")
 	except:
 		print("====.====")
 
