@@ -2,10 +2,10 @@ from pyquery import PyQuery as pq
 import requests
 import os
 
-#for i in range(1,18):
-#	url = "http://www.xiao688.com/cms/article/id-82834_page-" + str(i) + ".html"
-#	print(url)
-url = "https://www.aitaotu.com/zt/mntp/"
+for i in range(1,18):
+	url = "http://www.xiao688.com/cms/article/id-82834_page-" + str(i) + ".html"
+	print(url)
+
 headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.40 Safari/537.36"}
 doc = pq(url,headers=headers,timeout=10)
 html_image = doc('#maincont dd a img')
