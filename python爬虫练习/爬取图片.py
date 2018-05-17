@@ -2,6 +2,13 @@ from pyquery import PyQuery as pq
 import requests
 import os
 
+<<<<<<< HEAD
+=======
+for i in range(1,18):
+	url = "http://www.xiao688.com/cms/article/id-82834_page-" + str(i) + ".html"
+	print(url)
+
+>>>>>>> 84138e36fd83485e11a0b1052cfa0a77e29ef2a0
 headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.40 Safari/537.36"}
 
 def HtmlUrl(url):
