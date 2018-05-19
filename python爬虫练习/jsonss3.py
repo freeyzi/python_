@@ -24,3 +24,7 @@ for n in news:
     newsdata.insert_one(data)
 for i in newsdata.find():
     print(i)
+
+with open('douban.txt','w',encoding='utf-8') as f:
+    f.write(json.dumps(i))
+    f.close()
