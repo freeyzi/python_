@@ -47,7 +47,7 @@ class QiushiSpider:
         url_list = self.get_url_list()
         #2.发送请求，获取响应
         for url in url_list:
-            html_str = self.parse_url(url)
+            html_str = self.pase_url(url)
             #3.提取数据
             content_list = self.get_content_list(html_str)
             #4.保存
